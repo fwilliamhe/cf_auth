@@ -15,9 +15,10 @@
  along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-#include "auth_tta.h"
+#include "auth.h"
 int main() {
     std::ios::sync_with_stdio(false), std::cin.tie(0);
-    int _tta = codeforces::get_tta("CFu22GLm");
-    std::cout << _tta << '\n';
+    std::cout << "_tta : " << codeforces::get_tta("CFu22GLm") << '\n';
+    std::cout << "bfaa : " << codeforces::generate_bfaa() << '\n';
+    std::cout << "ftaa : " << codeforces::generate_ftaa() << '\n';
 }
